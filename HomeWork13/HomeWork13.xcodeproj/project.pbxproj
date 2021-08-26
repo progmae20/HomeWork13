@@ -15,6 +15,7 @@
 		E468A4B626CBBE9000531F14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E468A4B426CBBE9000531F14 /* LaunchScreen.storyboard */; };
 		E468A4C126CBC21F00531F14 /* SignUpStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E468A4C026CBC21F00531F14 /* SignUpStoryboard.storyboard */; };
 		E468A4C326CBC2AA00531F14 /* SignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E468A4C226CBC2AA00531F14 /* SignInStoryboard.storyboard */; };
+		E468A4C826CBCF1700531F14 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E468A4C726CBCF1700531F14 /* SignInVC.swift */; };
 		E46F02E826D7B801008D678C /* ChangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F02E726D7B801008D678C /* ChangeVC.swift */; };
 		E472C8B126D6AE73003A4A81 /* PersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472C8B026D6AE73003A4A81 /* PersonVC.swift */; };
 		E472C8B326D6B00C003A4A81 /* PersonDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472C8B226D6B00C003A4A81 /* PersonDataVC.swift */; };

@@ -10,6 +10,9 @@ import UIKit
 class SignInVC: UIViewController {
     
     @IBOutlet weak var emailTF: UITextField!
+    
+    
+    
     @IBOutlet weak var passTF: UITextField!
     @IBOutlet weak var userErrorLbl: UILabel!
     

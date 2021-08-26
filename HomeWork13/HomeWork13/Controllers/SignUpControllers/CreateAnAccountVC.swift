@@ -10,6 +10,9 @@ import UIKit
 class CreateAnAccountVC: UIViewController {
     
     @IBOutlet weak var emailTF: UITextField!
+    
+    
+    
     @IBOutlet weak var emaiErrorLbl: UILabel!
     
     @IBOutlet weak var nameTF: UITextField!

@@ -96,7 +96,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sign in" id="uiJ-Tg-9Si"/>
                     <connections>
-                        <outlet property="emailTF" destination="CbZ-eX-IUZ" id="vHD-T3-5jP"/>
+                        <outlet property="emailTF" destination="CbZ-eX-IUZ" id="5Vc-ks-XJi"/>
                         <outlet property="passTF" destination="QTt-dt-4sV" id="4lT-B0-Ivq"/>
                         <outlet property="signUpBtn" destination="fVH-lA-I5q" id="ydW-zS-Mtp"/>
                         <outlet property="userErrorLbl" destination="7uK-4q-mh5" id="HLw-Uu-g4X"/>
