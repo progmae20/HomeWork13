@@ -27,23 +27,13 @@ class PersonDataVC: UIViewController {
     @IBOutlet weak var aboutMeLbl: UILabel!
     @IBOutlet weak var aboutMePerson: UILabel!
     
-    override func viewDidLoad() {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewDidLoad()
         hideMissing ()
         nameAndEmailLbl ()
         
     }
     
-
-
-    // MARK: - Navigation
-
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        hideMissing ()
-        nameAndEmailLbl ()
-    }
-
 
     private func nameAndEmailLbl () {
         emailPerson.text = UserDefaults.standard.object(forKey: Constants.email) as! String

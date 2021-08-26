@@ -12,16 +12,7 @@ class PersonVC: UIViewController {
     @IBOutlet weak var nameAndSurname: UILabel!
     @IBOutlet weak var emailPerson: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        nameAndEmailLbl ()
-        // Do any additional setup after loading the view.
-    }
-    
-
-
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func viewWillAppear(_ animated: Bool) {
         nameAndEmailLbl ()
     }
 

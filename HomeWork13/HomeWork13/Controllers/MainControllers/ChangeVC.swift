@@ -21,15 +21,6 @@ class ChangeVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-
-    // MARK: - Navigation
-
-
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//    }
-    
     
     @IBAction func chengeBtn(_ sender: Any) {
         if nameTF.text != "" {
@@ -47,6 +38,8 @@ class ChangeVC: UIViewController {
         if aboutMeTView.text != "" {
             UserDefaults.standard.set(aboutMeTView.text, forKey: Constants.aboutMe)
         }
-        navigationController?.dismiss(animated: true, completion: nil)
+    
+        navigationController?.popViewController(animated: true)
+        
     }
 }
