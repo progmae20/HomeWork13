@@ -22,21 +22,31 @@ class ChangeVC: UIViewController {
     }
     
 
-    /*
+
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//    }
+    
+    
     @IBAction func chengeBtn(_ sender: Any) {
-        UserDefaults.standard.set(nameTF.text, forKey: Constants.name)
-        UserDefaults.standard.set(ageTF.text, forKey: Constants.age)
-        UserDefaults.standard.set(sexTF.text, forKey: Constants.sex)
-        UserDefaults.standard.set(studyWorkTF.text, forKey: Constants.studyWork)
-        UserDefaults.standard.set(aboutMeTView.text, forKey: Constants.aboutMe)
+        if nameTF.text != "" {
+            UserDefaults.standard.set(nameTF.text, forKey: Constants.name)
+        }
+        if ageTF.text != "" {
+            UserDefaults.standard.set(ageTF.text, forKey: Constants.age)
+        }
+        if sexTF.text != "" {
+            UserDefaults.standard.set(sexTF.text, forKey: Constants.sex)
+        }
+        if studyWorkTF.text != "" {
+            UserDefaults.standard.set(studyWorkTF.text, forKey: Constants.studyWork)
+        }
+        if aboutMeTView.text != "" {
+            UserDefaults.standard.set(aboutMeTView.text, forKey: Constants.aboutMe)
+        }
+        navigationController?.dismiss(animated: true, completion: nil)
     }
 }

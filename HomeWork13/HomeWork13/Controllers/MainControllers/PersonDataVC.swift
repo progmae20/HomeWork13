@@ -35,15 +35,15 @@ class PersonDataVC: UIViewController {
     }
     
 
-    /*
+
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        hideMissing ()
+        nameAndEmailLbl ()
     }
-    */
+
 
     private func nameAndEmailLbl () {
         emailPerson.text = UserDefaults.standard.object(forKey: Constants.email) as! String
@@ -56,16 +56,20 @@ class PersonDataVC: UIViewController {
         if namePerson.text != "" && namePerson.text != nil {
             nameLbl.isHidden = false
             namePerson.isHidden = false
-        } else if agePerson.text != "" && agePerson.text != nil {
+        }
+        if agePerson.text != "" && agePerson.text != nil {
             ageLbl.isHidden = false
             agePerson.isHidden = false
-        } else if sexPerson.text != "" && sexPerson.text != nil {
+        }
+        if sexPerson.text != "" && sexPerson.text != nil {
             sexLbl.isHidden = false
             sexPerson.isHidden = false
-        } else if studyWorkPerson.text != "" && studyWorkPerson.text != nil {
+        }
+        if studyWorkPerson.text != "" && studyWorkPerson.text != nil {
             studyWorkLbl.isHidden = false
             studyWorkPerson.isHidden = false
-        } else if aboutMePerson.text != "" &&
+        }
+        if aboutMePerson.text != "" &&
                     aboutMePerson.text != nil &&
                     aboutMePerson.text != " " &&
                     aboutMePerson.text != "I like..."{

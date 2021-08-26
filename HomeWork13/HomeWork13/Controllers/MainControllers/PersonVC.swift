@@ -19,11 +19,11 @@ class PersonVC: UIViewController {
     }
     
 
-//
-//    // MARK: - Navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//    
-//    }
+
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        nameAndEmailLbl ()
+    }
 
     private func nameAndEmailLbl () {
         if let nameAndSurname = UserDefaults.standard.object(forKey: Constants.name) as? String,
