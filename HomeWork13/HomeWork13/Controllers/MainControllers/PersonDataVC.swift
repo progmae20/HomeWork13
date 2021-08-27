@@ -27,6 +27,8 @@ class PersonDataVC: UIViewController {
     @IBOutlet weak var aboutMeLbl: UILabel!
     @IBOutlet weak var aboutMePerson: UILabel!
     
+    @IBOutlet weak var scrolView: UIScrollView!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidLoad()
         hideMissing ()
@@ -34,6 +36,9 @@ class PersonDataVC: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+       self.startKeyboardObserver()
+    }
 
     private func nameAndEmailLbl () {
         emailPerson.text = UserDefaults.standard.object(forKey: Constants.email) as! String
@@ -83,5 +88,26 @@ class PersonDataVC: UIViewController {
 
         aboutMeLbl.isHidden = true
         aboutMePerson.isHidden = true
+    }
+    private func startKeyboardObserver(){
+        NotificationCenter.default.addObserver(self, selector:
+                                                #selector (CreateAnAccountVC.keyboardWillShow),
+                                               name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector:
+                                                #selector (CreateAnAccountVC.keyboardWillHide),
+                                               name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        guard let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
+        let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: keyboardSize.height, right: 0.0)
+        scrolView.contentInset = contentInsets
+        scrolView.scrollIndicatorInsets = contentInsets
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+        scrolView.contentInset = contentInsets
+        scrolView.scrollIndicatorInsets = contentInsets
     }
 }

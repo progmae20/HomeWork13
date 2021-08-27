@@ -241,6 +241,7 @@
                         <outlet property="emailPerson" destination="Woh-un-vJt" id="9dR-0k-gEb"/>
                         <outlet property="nameLbl" destination="a4V-Z0-kSy" id="LIN-do-BPB"/>
                         <outlet property="namePerson" destination="3th-Me-JZB" id="6AM-45-hid"/>
+                        <outlet property="scrolView" destination="0QD-VG-rl6" id="sqn-Bw-BCS"/>
                         <outlet property="sexLbl" destination="BEw-eV-O9g" id="kys-mU-rR3"/>
                         <outlet property="sexPerson" destination="cJT-Zg-qTJ" id="CF9-96-4vz"/>
                         <outlet property="studyWorkLbl" destination="MgW-us-RDY" id="a0s-gS-Ztz"/>
@@ -413,6 +414,7 @@
                         <outlet property="aboutMeTView" destination="MzW-rv-o9w" id="H0d-Tc-U5j"/>
                         <outlet property="ageTF" destination="gRB-Cd-p0G" id="Uzs-QI-0D0"/>
                         <outlet property="nameTF" destination="grR-1L-3Gn" id="IuX-wl-2S1"/>
+                        <outlet property="scrolView" destination="jaP-zy-sJj" id="iKY-y9-8h0"/>
                         <outlet property="sexTF" destination="ZPn-IK-lQ3" id="0w7-Ls-RSd"/>
                         <outlet property="studyWorkTF" destination="XzF-ow-cb8" id="LPM-2E-ZoF"/>
                     </connections>
