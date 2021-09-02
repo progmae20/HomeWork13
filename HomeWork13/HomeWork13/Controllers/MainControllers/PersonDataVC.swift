@@ -33,11 +33,7 @@ class PersonDataVC: UIViewController {
         super.viewDidLoad()
         hideMissing ()
         nameAndEmailLbl ()
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-       self.startKeyboardObserver()
+        self.startKeyboardObserver()
     }
 
     private func nameAndEmailLbl () {
